@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import {
   Hero,
-  WonderfulSuggestion
+  WonderfulSuggestion,
+  RecentVisits,
+  DogAlbums,
+  AllDogsIntroduction
 } from 'Index'
 
 export default function Home() {
@@ -14,5 +17,8 @@ export default function Home() {
     </Head>
     <Hero />
     <WonderfulSuggestion />
+    <RecentVisits />
+    <DogAlbums />
+    <AllDogsIntroduction />
   </>
 }
