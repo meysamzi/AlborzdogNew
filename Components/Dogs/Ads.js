@@ -16,7 +16,7 @@ const Ads = () => {
                 )}
             </ul>
             <div className="basis-[40%] relative h-[250px]">
-                <Image src={'/Images/Doberman.jpg'} className='object-cover' alt={"Pic"} layout="fill" />
+                <Image src={'/Images/Doberman.jpg'} className='object-cover rounded-l' alt={"Pic"} layout="fill" />
             </div>
         </div>
     </section>
