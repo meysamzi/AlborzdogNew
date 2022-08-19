@@ -18,6 +18,9 @@ const Attitude = () => {
                     )}
                 </ul>
             </div>
+            <div className="flex justify-center items-center bg-red-600 text-white rounded">
+                <span className="py-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت </span>
+            </div>
         </div>
     </section>
 }
