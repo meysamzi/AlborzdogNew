@@ -10,9 +10,9 @@ const Collection = () => {
             {items?.map((i, index) =>
                 <Link href={'/'}>
                     <a key={index} className="flex flex-col items-center gap-6 rounded shadow p-4">
-                        <a className="relative w-[100px] h-[100px]">
+                        <div className="relative w-[100px] h-[100px]">
                             <Image src={'/Images/Doberman.jpg'} alt={"pic"} className='object-cover rounded-full' layout="fill" />
-                        </a>
+                        </div>
                         <h6 className="font-bold">لورم ایپسوم متن ساختگی </h6>
                     </a>
                 </Link>
