@@ -1,11 +1,13 @@
 import {
-    MySwiper
+    MySwiper,
+    Introduction
 } from "Dogs"
 
 const Dogs = () => {
 
     return <>
         <MySwiper />
+        <Introduction />
     </>
 }
 
