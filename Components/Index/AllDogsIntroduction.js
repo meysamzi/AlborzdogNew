@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -24,21 +25,23 @@ const AllDogsIntroduction = () => {
                 breakpoints={{
                     [md]: {
                         slidesPerView: 2,
-                        spaceBetween: 10,
+                        spaceBetween: 20,
                     },
                     [lg]: {
                         slidesPerView: 3,
-                        spaceBetween: 20,
+                        spaceBetween: 40,
                     },
                 }}
                 className="mySwiper mt-10"
             >
                 {items?.map((i, index) => (
                     <SwiperSlide key={index}>
-                        <div className="flex flex-col items-center gap-6 p-4">
-                            <div className="relative w-full h-[250px]">
-                                <Image src={'/Images/Doberman.jpg'} alt={'pic'} className='object-cover rounded' layout="fill" />
-                            </div>
+                        <div className="flex flex-col items-center gap-6">
+                            <Link href={'/'}>
+                                <a className="relative w-full h-[250px]">
+                                    <Image src={'/Images/Doberman.jpg'} alt={'pic'} className='object-cover rounded' layout="fill" />
+                                </a>
+                            </Link>
                             <h6 className="font-bold">سگ سیبرین هاسکی</h6>
                             <hr className="border-red-600 border-[1px] w-full" />
                             <p className="leading-6 lg:leading-7 text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای </p>
