@@ -40,7 +40,7 @@ const RecentVisits = () => {
                 >
                     {items?.map((i, index) => (
                         <SwiperSlide key={index}>
-                            <div className="bg-white rounded">
+                            <div className="bg-white rounded shadow">
                                 <div className="relative h-[150px]">
                                     <Image src={'/Images/Haski.png'} alt={'pic'} className='object-contain' layout="fill" />
                                 </div>
