@@ -90,7 +90,7 @@ const Footer = () => {
                                     </div>
                                     <div className="basis-[50%] relative h-[140px] md:h-[120px]">
                                         <Image
-                                            src={'/Images/1.jpg'}
+                                            src={'/Images/Doberman.jpg'}
                                             className='object-cover rounded'
                                             layout={'fill'}
                                         />
