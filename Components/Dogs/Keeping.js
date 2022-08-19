@@ -14,13 +14,16 @@ const Keeping = () => {
                     <Image src={'/Images/Doberman.jpg'} alt={"pic"} className='object-cover rounded' layout="fill" />
                 </div>
             </div>
-            <div className="basis-[70%] flex gap-4">
+            <div className="basis-[70%] grid grid-cols-4 gap-4">
                 {items?.map((i, index) =>
-                    <div key={index} className="basis-[25%] flex flex-col items-center gap-10 group">
+                    <div key={index} className="flex flex-col items-center gap-6 group">
                         <FavoriteIcon />
                         <span>لورم ایپسوم متن ساختگی </span>
                     </div>
                 )}
+                <p className="col-span-full">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                </p>
             </div>
         </div>
     </section>
