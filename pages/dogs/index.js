@@ -4,7 +4,8 @@ import {
     Attitude,
     Ads,
     Rating,
-    Keeping
+    Keeping,
+    History
 } from "Dogs"
 
 const Dogs = () => {
@@ -16,6 +17,7 @@ const Dogs = () => {
         <Ads />
         <Rating />
         <Keeping />
+        <History />
     </>
 }
 
