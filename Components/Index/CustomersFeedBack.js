@@ -35,11 +35,15 @@ const CustomersFeedBack = () => {
             >
                 {items?.map((i, index) => (
                     <SwiperSlide key={index}>
-                        <div className="flex flex-col gap-6 bg-red-600 text-white">
-                            <div className="relative w-[85px] h-[85px] rounded-full">
-                                <Image src={'/Images/Doberman.jpg'} alt={'pic'} className='object-contain rounded-full' layout="fill" />
+                        <div className="flex flex-col items-center gap-10 bg-neutral-100 rounded p-6 text-xs md:text-sm lg:text-base">
+                            <div className="relative w-[85px] h-[85px]">
+                                <Image src={'/Images/Doberman.jpg'} alt={'pic'} className='object-cover rounded-full' layout="fill" />
                             </div>
-                            <h6>عنوان</h6>
+                            <span className="text-justify">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+                            </span>
+                            <span className="font-bold text-red-600">لورم ایپسوم متن ساختگی با </span>
+                            <span>لورم ایپسوم متن ساختگی </span>
                         </div>
                     </SwiperSlide>
                 ))}
