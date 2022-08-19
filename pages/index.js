@@ -4,7 +4,8 @@ import {
   WonderfulSuggestion,
   RecentVisits,
   DogAlbums,
-  AllDogsIntroduction
+  AllDogsIntroduction,
+  CustomersFeedBack
 } from 'Index'
 
 export default function Home() {
@@ -20,5 +21,6 @@ export default function Home() {
     <RecentVisits />
     <DogAlbums />
     <AllDogsIntroduction />
+    <CustomersFeedBack />
   </>
 }
