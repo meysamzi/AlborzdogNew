@@ -13,7 +13,7 @@ const History = () => {
                 </p>
             </div>
             <div className="basis-[40%] relative h-[300px]">
-                <Image src={'/Images/Doberman.jpg'} alt={'Pic'} className='object-cover rounded' layout="fill" />
+                <Image src={'/Images/Doberman.jpg'} alt={'Pic'} className='object-cover rounded grayscale-[80%]' layout="fill" />
             </div>
         </div>
     </section>
