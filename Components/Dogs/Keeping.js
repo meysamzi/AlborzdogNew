@@ -16,7 +16,7 @@ const Keeping = () => {
             </div>
             <div className="basis-[70%] flex gap-4">
                 {items?.map((i, index) =>
-                    <div className="basis-[25%] flex flex-col items-center gap-10 group">
+                    <div key={index} className="basis-[25%] flex flex-col items-center gap-10 group">
                         <FavoriteIcon />
                         <span>لورم ایپسوم متن ساختگی </span>
                     </div>
