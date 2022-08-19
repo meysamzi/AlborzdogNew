@@ -1,6 +1,11 @@
+import {
+    MySwiper
+} from "Dogs"
+
 const Dogs = () => {
 
     return <>
+        <MySwiper />
     </>
 }
 

@@ -7,6 +7,9 @@
             ],
             "Share": [
                 "Components/Share/Exports"
+            ],
+            "Dogs": [
+                "Components/Dogs/Exports"
             ]
         }
     }
