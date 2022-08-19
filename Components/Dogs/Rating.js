@@ -7,7 +7,7 @@ const Rating = () => {
     const stars = [1, 2, 3, 4]
 
     return <section>
-        <div className="flex flex-col gap-8 max-w-7xl mx-4 md:mx-6 lg:mx-8 xl:mx-10 2xl:mx-auto">
+        <div className="flex flex-col gap-8 max-w-7xl mx-4 md:mx-6 lg:mx-8 xl:mx-10 2xl:mx-auto my-10 lg:my-28">
             {items?.map((i, index) =>
                 <div key={index} className={`flex gap-4 items-center py-6 px-4 rounded shadow ${index === 0 && "bg-black text-white"}`}>
                     <div className="basis-[50%]">
