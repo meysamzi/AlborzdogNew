@@ -16,14 +16,11 @@ const Keeping = () => {
             </div>
             <div className="basis-[70%] grid grid-cols-4 gap-4">
                 {items?.map((i, index) =>
-                    <div key={index} className="flex flex-col items-center gap-6 group">
+                    <div className="flex flex-col items-center gap-4">
                         <FavoriteIcon />
                         <span>لورم ایپسوم متن ساختگی </span>
                     </div>
                 )}
-                <p className="col-span-full">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
-                </p>
             </div>
         </div>
     </section>
