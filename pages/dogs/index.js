@@ -2,7 +2,8 @@ import {
     MySwiper,
     Introduction,
     Attitude,
-    Ads
+    Ads,
+    Rating
 } from "Dogs"
 
 const Dogs = () => {
@@ -12,6 +13,7 @@ const Dogs = () => {
         <Introduction />
         <Attitude />
         <Ads />
+        <Rating />
     </>
 }
 
