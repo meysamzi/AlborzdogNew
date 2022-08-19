@@ -18,8 +18,8 @@ const RecentVisits = () => {
         <div className="flex gap-8 max-w-7xl mx-4 md:mx-6 lg:mx-8 xl:mx-10 2xl:mx-auto my-10 lg:my-28">
             <div className="w-[75%]">
                 <div className="flex flex-col gap-4">
-                <h6>سگ نگهبان</h6>
-                <span>بر اساس بازدیدهای شما</span>
+                    <h6>سگ نگهبان</h6>
+                    <span>بر اساس بازدیدهای شما</span>
                 </div>
                 <Swiper
                     navigation={true}
