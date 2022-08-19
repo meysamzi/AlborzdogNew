@@ -17,18 +17,22 @@ const NavBar = () => {
                                 تست
                             </a>
                         </Link>
-                        <div className="hidden z-10 group-hover:flex absolute right-0 left-0 mx-4 rounded-b bg-white text-black shadow-2xl">
-                            <ul className="basis-[35%] grid grid-cols-3 gap-8">
-                                <h6 className="col-span-full">
+                        <div className="hidden z-10 group-hover:flex absolute right-0 left-0 mx-4 rounded-b bg-white text-black shadow-2xl p-4">
+                            <ul className="basis-[20%] grid grid-cols-3 gap-8">
+                                <h6 className="font-bold col-span-full">
                                     لیست کل نژاد ها
                                 </h6>
                                 {items?.map((i, index) =>
                                     <li key={index}>
-                                        تست
+                                        <Link href={'/'}>
+                                            <a>
+                                                تست
+                                            </a>
+                                        </Link>
                                     </li>
                                 )}
                             </ul>
-                            <div className="basis-[65%]">
+                            <div className="basis-[80%]">
                                 a
                             </div>
                         </div>
