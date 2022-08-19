@@ -13,10 +13,14 @@ const Keeping = () => {
                 </div>
             </div>
             <div className="basis-[70%] flex gap-4">
-                <div className="flex flex-col gap-10">
-                    <FavoriteIcon />
-                    <span>لورم ایپسوم</span>
-                    <KeepingContent />
+                <div className="flex flex-col gap-8 group">
+                    <div className="flex flex-col gap-4">
+                        <FavoriteIcon />
+                        <span>لورم ایپسوم</span>
+                    </div>
+                    <div className="hidden group-hover:block">
+                        <KeepingContent />
+                    </div>
                 </div>
             </div>
         </div>
