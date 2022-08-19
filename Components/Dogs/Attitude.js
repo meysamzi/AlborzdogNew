@@ -5,7 +5,7 @@ const Attitude = () => {
     const items = [1, 2, 3, 4, 5, 5]
 
     return <section>
-        <div className="flex flex-col gap-8 max-w-7xl mx-4 md:mx-6 lg:mx-8 xl:mx-10 2xl:mx-auto my-10 lg:my-28">
+        <div className="flex flex-col gap-8 shadow-2xl max-w-7xl mx-4 md:mx-6 lg:mx-8 xl:mx-10 2xl:mx-auto my-10 lg:my-28">
             <div className="flex gap-8">
                 <div className="basis-[50%] relative h-[350px]">
                     <Image src={'/Images/Doberman.jpg'} className='object-cover rounded transition-[transform] duration-[0.2s] hover:scale-[105%]' alt={"pic"} layout="fill" />
