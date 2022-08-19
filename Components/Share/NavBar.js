@@ -21,7 +21,7 @@ const NavBar = () => {
                                 تست
                             </a>
                         </Link>
-                        <div className="hidden z-10 group-hover:flex absolute right-0 left-0 mx-4 rounded-b bg-white text-black shadow-2xl p-4">
+                        <div className="hidden z-10 group-hover:flex gap-10 absolute right-0 left-0 mx-4 p-4 rounded-b bg-white text-black shadow-2xl">
                             <ul className="basis-[15%] grid grid-cols-3 gap-8 h-min">
                                 <h6 className="font-bold col-span-full">
                                     لیست کل نژاد ها
@@ -40,13 +40,13 @@ const NavBar = () => {
                                 <ul className="basis-[80%] flex flex-col gap-8">
                                     {attitudes?.map((i, index) =>
                                         <li key={index} className={`${index === 0 && "font-bold"}`}>
-                                            تست تست تست
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
                                         </li>
                                     )}
                                 </ul>
                                 <ul className="basis-[20%] flex flex-col gap-8">
                                     {pictures?.map((i, index) =>
-                                        <li className="relative h-[100px]">
+                                        <li key={index} className="relative h-[100px]">
                                             <Image src={'/Images/Doberman.jpg'} className='object-cover rounded' alt={"pic"} layout='fill' />
                                         </li>
                                     )}
