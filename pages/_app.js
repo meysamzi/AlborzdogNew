@@ -1,7 +1,8 @@
 import '../styles/globals.css'
 import {
   NavBar,
-  Footer
+  Footer,
+  SubFooter
 } from 'Share'
 
 function MyApp({ Component, pageProps }) {
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
     </main>
     <Footer />
+    <SubFooter />
   </>
 }
 
