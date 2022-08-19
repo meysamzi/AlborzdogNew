@@ -4,6 +4,8 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 
 const Keeping = () => {
 
+    const items = [1, 2, 3, 4]
+
     return <section>
         <div className="flex gap-10 shadow p-4 max-w-7xl mx-4 md:mx-6 lg:mx-8 xl:mx-10 2xl:mx-auto">
             <div className="basis-[30%] flex flex-col gap-8">
@@ -13,15 +15,12 @@ const Keeping = () => {
                 </div>
             </div>
             <div className="basis-[70%] flex gap-4">
-                <div className="flex flex-col gap-8 group">
-                    <div className="flex flex-col gap-4">
+                {items?.map((i, index) =>
+                    <div className="basis-[25%] flex flex-col items-center gap-10 group">
                         <FavoriteIcon />
-                        <span>لورم ایپسوم</span>
+                        <span>لورم ایپسوم متن ساختگی </span>
                     </div>
-                    <div className="hidden group-hover:block">
-                        <KeepingContent />
-                    </div>
-                </div>
+                )}
             </div>
         </div>
     </section>
