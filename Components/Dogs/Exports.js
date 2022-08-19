@@ -6,6 +6,7 @@ import Rating from "./Rating";
 import Keeping from "./Keeping";
 import KeepingContent from './KeepingContent'
 import History from "./History";
+import Collection from "./Collection";
 
 export { MySwiper }
 export { Introduction }
@@ -15,3 +16,4 @@ export { Rating }
 export { Keeping }
 export { KeepingContent }
 export { History }
+export { Collection }
