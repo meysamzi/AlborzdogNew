@@ -1,5 +1,8 @@
 import '../styles/globals.css'
-import { NavBar } from 'Share'
+import {
+  NavBar,
+  Footer
+} from 'Share'
 
 function MyApp({ Component, pageProps }) {
 
@@ -8,6 +11,7 @@ function MyApp({ Component, pageProps }) {
     <main>
       <Component {...pageProps} />
     </main>
+    <Footer />
   </>
 }
 
