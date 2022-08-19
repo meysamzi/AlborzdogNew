@@ -36,10 +36,8 @@ const AllDogsIntroduction = () => {
                 {items?.map((i, index) => (
                     <SwiperSlide key={index}>
                         <div className="flex flex-col items-center gap-6 p-4">
-                            <div className="flex justify-center">
-                                <div className="relative w-[85px] h-[85px]">
-                                    <Image src={'/Images/Doberman.jpg'} alt={'pic'} className='object-cover rounded-full' layout="fill" />
-                                </div>
+                            <div className="relative w-full h-[250px]">
+                                <Image src={'/Images/Doberman.jpg'} alt={'pic'} className='object-cover rounded' layout="fill" />
                             </div>
                             <h6 className="font-bold">سگ سیبرین هاسکی</h6>
                             <hr className="border-red-600 border-[1px] w-full" />
