@@ -14,13 +14,7 @@ const Keeping = () => {
                     <Image src={'/Images/Doberman.jpg'} alt={"pic"} className='object-cover rounded' layout="fill" />
                 </div>
             </div>
-            <div className="basis-[70%] grid grid-cols-4 gap-4">
-                {items?.map((i, index) =>
-                    <div className="flex flex-col items-center gap-4">
-                        <FavoriteIcon />
-                        <span>لورم ایپسوم متن ساختگی </span>
-                    </div>
-                )}
+            <div className="basis-[70%] flex gap-4">
             </div>
         </div>
     </section>
