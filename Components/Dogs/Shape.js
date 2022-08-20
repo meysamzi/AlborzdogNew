@@ -1,6 +1,13 @@
 import Image from "next/image"
+import { useState } from "react"
 
 const Shape = () => {
+
+    const [head, sethead] = useState(true)
+    const [legs, setlegs] = useState(false)
+    const [tail, settail] = useState(false)
+    const [shape, setshape] = useState(false)
+    const [skale, setskale] = useState(false)
 
     const items = [1, 2, 3, 4, 5]
 
