@@ -17,8 +17,9 @@ const Shape = () => {
             <div className="basis-[40%] relative h-[300px]">
                 <Image src={'/Images/Doberman.jpg'} alt={'Pic'} className='object-cover rounded' layout="fill" />
                 {items?.map((i, index) =>
-                    <div className={`absolute ${index === 0 && "left-0"} flex justify-center items-center w-[50px] h-[50px] rounded-full bg-[black] text-white`}>
-                        <span>{index}</span>
+                    <div className={`absolute ${index === 0 && "left-0"} ${index === 1 && "top-[20%] right-[20%]"} ${index === 2 && "top-[40%] right-[60%]"} 
+                    ${index === 3 && "top-[60%] right-[80%]"} ${index === 4 && "top-[80%] right-[10%]"} flex justify-center items-center w-[50px] h-[50px] rounded-full bg-[#00000088] text-white`}>
+                        <span>{index + 1}</span>
                     </div>
                 )}
             </div>
