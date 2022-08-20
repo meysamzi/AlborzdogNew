@@ -20,6 +20,9 @@ const Keeping = () => {
                         <FavoriteIcon />
                     </div>
                 )}
+                {items?.map((i, index) =>
+                    <KeepingContent />
+                )}
             </div>
         </div>
     </section>
