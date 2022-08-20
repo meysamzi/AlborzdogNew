@@ -1,6 +1,6 @@
 const KeepingContent = () => {
 
-    return <div className="grid gap-4">
+    return <div className="flex flex-col gap-4">
         <span>
             لورم ایپسوم متن ساختگی
         </span>

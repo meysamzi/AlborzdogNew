@@ -5,6 +5,7 @@ import Ads from "./Ads";
 import Rating from "./Rating";
 import Keeping from "./Keeping";
 import KeepingContent from './KeepingContent'
+import Shape from "./Shape";
 import History from "./History";
 import Collection from "./Collection";
 
@@ -15,5 +16,6 @@ export { Ads }
 export { Rating }
 export { Keeping }
 export { KeepingContent }
+export { Shape }
 export { History }
 export { Collection }
