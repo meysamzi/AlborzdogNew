@@ -15,6 +15,11 @@ const Keeping = () => {
                 </div>
             </div>
             <div className="basis-[70%] flex gap-4">
+                {items?.map((i, index) =>
+                    <div key={index} className='basis-[25%] flex justify-center'>
+                        <FavoriteIcon />
+                    </div>
+                )}
             </div>
         </div>
     </section>
