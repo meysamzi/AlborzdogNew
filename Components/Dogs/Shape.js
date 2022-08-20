@@ -19,7 +19,7 @@ const Shape = () => {
                 {items?.map((i, index) =>
                     <div className={`absolute ${index === 0 && "left-0"} ${index === 1 && "top-[20%] right-[20%]"} ${index === 2 && "top-[40%] right-[60%]"} 
                     ${index === 3 && "top-[60%] right-[80%]"} ${index === 4 && "top-[80%] right-[10%]"} flex justify-center items-center w-[50px] h-[50px] rounded-full bg-[#00000088] text-white`}>
-                        <span>{index + 1}</span>
+                        <span>{i}</span>
                     </div>
                 )}
             </div>
