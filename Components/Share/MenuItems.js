@@ -5,7 +5,7 @@ const MenuItems = () => {
 
     const items = [1, 2, 3, 4, 56, 5, 5, 5, 5, 5, 5, 55, 5, 5, 55, 5, 5, 5, 5, 5]
     const attitudes = [1, 2, 3, 4, 5, 6, 6, 6, 6, 6, 66, 6]
-    const pictures = [1, 2,3]
+    const pictures = [1, 2, 3]
 
     return <>
         <ul className="basis-[15%] grid grid-cols-3 gap-8 h-min">

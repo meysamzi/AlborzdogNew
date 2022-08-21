@@ -16,7 +16,7 @@ const NavBar = () => {
                                 سگ روتوایلر
                             </a>
                         </Link>
-                        <div className="hidden z-10 group-hover:flex gap-10 absolute right-0 left-0 mx-4 p-4 rounded-b bg-white text-black shadow-2xl h-[70vh] overflow-y-auto">
+                        <div className="hidden z-10 group-hover:flex gap-10 absolute right-0 left-0 mx-4 p-10 rounded-b bg-white text-black shadow-2xl h-[80vh] overflow-y-auto">
                             <MenuItems />
                         </div>
                     </li>
