@@ -1,8 +1,33 @@
 import Image from "next/image"
 import { KeepingContent } from "Dogs";
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import { useState } from "react";
 
 const Keeping = () => {
+
+    const fakedata = [
+        {
+            id: 1,
+            description: "متن تستی 1"
+        },
+        {
+            id: 2,
+            description: "متن تستی 2"
+        },
+        {
+            id: 3,
+            description: "متن تستی 3"
+        },
+        {
+            id: 4,
+            description: "متن تستی 4"
+        }
+    ]
+
+    const [first, setfirst] = useState(true)
+    const [second, setsecond] = useState(false)
+    const [third, setthird] = useState(false)
+    const [fourth, setfourth] = useState(false)
 
     const items = [1, 2, 3, 4]
 
@@ -18,10 +43,18 @@ const Keeping = () => {
                 {items?.map((i, index) =>
                     <div key={index} className='flex flex-col gap-4'>
                         <FavoriteIcon />
-                        <span>تست</span>
+                        <span onMouseEnter={() => {
+                            { index === 0 && (setfirst(true), setsecond(false), setthird(false), setfourth(false)) }
+                            { index === 1 && (setsecond(true), setfirst(false), setthird(false), setfourth(false)) }
+                            { index === 2 && (setthird(true), setsecond(false), setfirst(false), setfourth(false)) }
+                            { index === 3 && (setfourth(true), setsecond(false), setthird(false), setfirst(false)) }
+                        }}>تست</span>
                     </div>
                 )}
-                <KeepingContent />
+                {first && <KeepingContent fakedata={fakedata[0]} />}
+                {second && <KeepingContent fakedata={fakedata[1]} />}
+                {third && <KeepingContent fakedata={fakedata[2]} />}
+                {fourth && <KeepingContent fakedata={fakedata[3]} />}
             </div>
         </div>
     </section>
