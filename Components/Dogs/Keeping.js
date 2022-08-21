@@ -1,7 +1,7 @@
+import { useState } from "react";
 import Image from "next/image"
 import { KeepingContent } from "Dogs";
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { useState } from "react";
 
 const Keeping = () => {
 
