@@ -11,7 +11,7 @@ const MenuItemsChildren = () => {
                 لیست کل نژاد ها
             </h6>
             {items?.map((i, index) =>
-                <li key={index} className=''>
+                <li key={index}>
                     <Link href={'/'}>
                         <a>
                             تست
