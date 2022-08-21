@@ -43,12 +43,12 @@ const Keeping = () => {
                 {items?.map((i, index) =>
                     <div key={index} className='flex flex-col gap-4'>
                         <FavoriteIcon />
-                        <span onMouseEnter={() => {
+                        <span onClick={() => {
                             { index === 0 && (setfirst(true), setsecond(false), setthird(false), setfourth(false)) }
                             { index === 1 && (setsecond(true), setfirst(false), setthird(false), setfourth(false)) }
                             { index === 2 && (setthird(true), setsecond(false), setfirst(false), setfourth(false)) }
                             { index === 3 && (setfourth(true), setsecond(false), setthird(false), setfirst(false)) }
-                        }}>تست</span>
+                        }} className='cursor-pointer'>تست</span>
                     </div>
                 )}
                 {first && <KeepingContent fakedata={fakedata[0]} />}
@@ -57,7 +57,7 @@ const Keeping = () => {
                 {fourth && <KeepingContent fakedata={fakedata[3]} />}
             </div>
         </div>
-    </section>
+    </section >
 }
 
 export default Keeping
