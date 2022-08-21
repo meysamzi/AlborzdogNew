@@ -23,13 +23,11 @@ const NavBar = () => {
                 ))}
             </ul>
             <div className="basis-[20%] flex justify-end">
-                <div className="relative w-[65px] h-[65px]">
-                    <Link href={'/'}>
-                        <a>
-                            <Image src={'/Images/Logo.png'} alt='log' className="object-contain" layout="fill" />
-                        </a>
-                    </Link>
-                </div>
+                <Link href={'/'}>
+                    <a className="relative w-[65px] h-[65px]">
+                        <Image src={'/Images/Logo.png'} alt='log' className="object-contain" layout="fill" />
+                    </a>
+                </Link>
             </div>
         </div>
     </nav>
