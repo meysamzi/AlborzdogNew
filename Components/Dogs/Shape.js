@@ -41,7 +41,7 @@ const Shape = () => {
                     <div key={index} onClick={() => {
                         { index === 0 && (sethead(true), setlegs(false)) } { index === 1 && (setlegs(true), sethead(false)) }
                     }} className={`absolute ${index === 0 && "left-[5%] top-[5%]"} ${index === 1 && "top-[20%] right-[20%]"} ${index === 2 && "top-[40%] right-[50%]"} 
-                    ${index === 3 && "top-[60%] right-[80%]"} ${index === 4 && "top-[80%] right-[10%]"} flex justify-center items-center w-[50px] h-[50px] rounded-full bg-[#00000088] text-white`}>
+                    ${index === 3 && "top-[60%] right-[80%]"} ${index === 4 && "top-[80%] right-[10%]"} flex justify-center items-center w-[50px] h-[50px] rounded-full bg-[#00000088] text-white cursor-pointer hover:bg-red-600`}>
                         <span>{i}</span>
                     </div>
                 )}
