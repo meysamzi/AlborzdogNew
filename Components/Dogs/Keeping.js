@@ -16,13 +16,12 @@ const Keeping = () => {
             </div>
             <div className="basis-[70%] grid grid-cols-4 justify-items-center gap-4">
                 {items?.map((i, index) =>
-                    <div key={index}>
+                    <div key={index} className='flex flex-col gap-4'>
                         <FavoriteIcon />
+                        <span>تست</span>
                     </div>
                 )}
-                {items?.map((i, index) =>
-                    <KeepingContent />
-                )}
+                <KeepingContent />
             </div>
         </div>
     </section>
