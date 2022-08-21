@@ -22,7 +22,7 @@ const Shape = () => {
         },
     ]
 
-    const [head, sethead] = useState(false)
+    const [head, sethead] = useState(true)
     const [legs, setlegs] = useState(false)
     const [tail, settail] = useState(false)
 
