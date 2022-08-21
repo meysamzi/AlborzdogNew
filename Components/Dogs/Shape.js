@@ -26,7 +26,7 @@ const Shape = () => {
     const [legs, setlegs] = useState(false)
     const [tail, settail] = useState(false)
 
-    const items = [1, 2, 3, 4, 5]
+    const items = [1, 2, 3]
 
     return <section>
         <div className="flex gap-10 p-4 shadow max-w-7xl mx-4 md:mx-6 lg:mx-8 xl:mx-10 2xl:mx-auto my-10 lg:my-28">
@@ -39,15 +39,16 @@ const Shape = () => {
                 <Image src={'/Images/Doberman.jpg'} alt={'Pic'} className='object-cover rounded' layout="fill" />
                 {items?.map((i, index) =>
                     <div key={index} onClick={() => {
-                        { index === 0 && (sethead(true), setlegs(false)) } { index === 1 && (setlegs(true), sethead(false)) }
+                        { index === 0 && (sethead(true), setlegs(false), settail(false)) } { index === 1 && (setlegs(true), sethead(false), settail(false)) }
+                        { index === 2 && (settail(true), sethead(false), setlegs(false)) }
                     }} className={`absolute ${index === 0 && "left-[5%] top-[5%]"} ${index === 1 && "top-[20%] right-[20%]"} ${index === 2 && "top-[40%] right-[50%]"} 
-                    ${index === 3 && "top-[60%] right-[80%]"} ${index === 4 && "top-[80%] right-[10%]"} flex justify-center items-center w-[50px] h-[50px] rounded-full bg-[#00000088] text-white cursor-pointer hover:bg-red-600`}>
+                    ${index === 3 && "top-[60%] right-[80%]"} ${index === 4 && "top-[80%] right-[10%]"} flex justify-center items-center w-[50px] h-[50px] rounded-full bg-[#000000a4] text-white cursor-pointer hover:bg-red-600`}>
                         <span>{i}</span>
                     </div>
                 )}
             </div>
         </div>
-    </section >
+    </section>
 }
 
 export default Shape
