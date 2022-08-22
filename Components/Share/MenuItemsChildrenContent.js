@@ -1,15 +1,16 @@
 import Image from "next/image"
 
-const MenuItemsChildrenContent = () => {
+const MenuItemsChildrenContent = ({ fakecontent }) => {
 
     const attitudes = [1, 2, 3, 4, 5, 6, 6, 6, 6, 6, 66, 6]
     const pictures = [1, 2, 3]
+    console.log(fakecontent);
 
     return <>
         <ul className="basis-[80%] flex flex-col gap-8">
             {attitudes?.map((i, index) =>
                 <li key={index} className={`${index === 0 && "font-bold"}`}>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                    {fakecontent?.content}
                 </li>
             )}
         </ul>

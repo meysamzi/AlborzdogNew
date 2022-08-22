@@ -7,15 +7,18 @@ const MenuItemsChildren = () => {
     const fakedata = [
         {
             id: 1,
-            content: "لورم ایپسوم متن ساختگی با "
+            title: "تست 1",
+            content: "لورم ایپسوم متن ساختگی با 1"
         },
         {
-            id: 1,
-            content: "لورم ایپسوم متن ساختگی با "
+            id: 2,
+            title: "تست 2",
+            content: "لورم ایپسوم متن ساختگی با 2"
         },
         {
-            id: 1,
-            content: "لورم ایپسوم متن ساختگی با "
+            id: 3,
+            title: "تست 3",
+            content: "لورم ایپسوم متن ساختگی با 3"
         }
     ]
 
@@ -28,21 +31,18 @@ const MenuItemsChildren = () => {
             <h6 className="font-bold col-span-full">
                 لیست کل نژاد ها
             </h6>
-            {items?.map((i, index) =>
-                <li key={index} onClick={() => setcontent(i)}>
+            {fakedata?.map((i, index) =>
+                <li key={index} onClick={() => setcontent(i.id)}>
                     <Link href={'/'}>
                         <a>
-                            تست
+                            {i?.title}
                         </a>
                     </Link>
                 </li>
             )}
         </ul>
-        {
-            content
-        }
         <div className="basis-[85%] flex gap-8">
-            <MenuItemsChildrenContent />
+            <MenuItemsChildrenContent fakecontent={fakedata.find((i) => i.id === content)} />
         </div>
     </>
 }
