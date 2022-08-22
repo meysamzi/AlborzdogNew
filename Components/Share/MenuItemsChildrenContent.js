@@ -3,7 +3,6 @@ import Image from "next/image"
 const MenuItemsChildrenContent = ({ fakecontent }) => {
 
     const attitudes = [1, 2, 3, 4, 5, 6, 6, 6, 6, 6, 66, 6]
-    const pictures = [1, 2, 3]
     console.log(fakecontent);
 
     return <>
@@ -15,9 +14,9 @@ const MenuItemsChildrenContent = ({ fakecontent }) => {
             )}
         </ul>
         <ul className="basis-[20%] flex flex-col gap-8">
-            {pictures?.map((i, index) =>
-                <li key={index} className="relative h-full">
-                    <Image src={'/Images/Doberman.jpg'} className='object-cover rounded' alt={"pic"} layout='fill' />
+            {fakecontent?.pictures?.map((i) =>
+                <li key={i?.id} className="relative h-full">
+                    <Image src={i} className='object-cover rounded' alt={"pic"} layout='fill' />
                 </li>
             )}
         </ul>
