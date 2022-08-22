@@ -22,8 +22,6 @@ const MenuItemsChildren = () => {
         }
     ]
 
-    const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
-
     const [content, setcontent] = useState(null)
 
     return <>
@@ -32,10 +30,10 @@ const MenuItemsChildren = () => {
                 لیست کل نژاد ها
             </h6>
             {fakedata?.map((i, index) =>
-                <li key={index} onClick={() => setcontent(i.id)}>
+                <li key={index} onClick={() => setcontent(i)}>
                     <Link href={'/'}>
                         <a>
-                            {i?.title}
+                            تست
                         </a>
                     </Link>
                 </li>
