@@ -30,10 +30,10 @@ const MenuItemsChildren = () => {
                 لیست کل نژاد ها
             </h6>
             {fakedata?.map((i, index) =>
-                <li key={index} onClick={() => setcontent(i)}>
+                <li key={index} onClick={() => setcontent(i?.id)}>
                     <Link href={'/'}>
                         <a>
-                            تست
+                            {i?.title}
                         </a>
                     </Link>
                 </li>
